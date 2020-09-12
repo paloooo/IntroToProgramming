@@ -5,5 +5,32 @@ theme:
   scheme: default
   primary: deep purple
   accent: deep purple
+  features:
+   - instant
+   - tabs
+   - search
 
 repo_url: https://github.com/squidfunk/mkdocs-material
+nav:
+  - Overview: "index.md"
+  - Getting started:
+    - getting_started/index.md
+
+markdown_extensions:
+ - pymdownx.highlight:
+    use_pygments: true
+ - pymdownx.emoji:
+    emoji_index: !!python/name:materialx.emoji.twemoji
+    emoji_generator: !!python/name:materialx.emoji.to_svg
+ - pymdownx.betterem:
+    smart_enable: all
+ - admonition
+ - pymdownx.superfences
+ - attr_list
+ - pymdownx.inlinehilite
+ - pymdownx.tabbed
+ - footnotes
+ - pymdownx.caret
+ - pymdownx.mark
+ - pymdownx.tilde
+ - clickable_checkbox: true
