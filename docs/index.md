@@ -1,5 +1,6 @@
-# Welcome to MkDocs
+# Welcome to the MkDocs Template
 
+This is a Template 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands

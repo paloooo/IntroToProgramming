@@ -1,1 +1,9 @@
 site_name: Template
+theme:
+ name: material
+ palette:
+  scheme: default
+  primary: deep purple
+  accent: deep purple
+
+repo_url: https://github.com/squidfunk/mkdocs-material
