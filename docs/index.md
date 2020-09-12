@@ -73,13 +73,13 @@ You should add your project description right here to let the user know what thi
 hi[^1] this is a footnote link
 
 [^1]:
- this is the foonote
+ this is the footnote
 
 ```MD
 hi[^1] this is a footnote link
 
 [^1]:
- this is the foonote
+ this is the footnote
 ```
 
 ## Formatting
@@ -185,10 +185,11 @@ hi[^1] this is a footnote link
 === "Result"
 
 	* [x] this is a checkbox
-	* 
+	* [ ] this is also a checkbox
 
 === "Code"
 
 	```md
-	wow - emojis are fun! :smile:
+	* [x] this is a checkbox
+	* [ ] this is also a checkbox
 	```
