@@ -10,7 +10,7 @@ theme:
    - tabs
    - search
 
-repo_url: https://github.com/Poly-OpenDev/MKDOCS-template
+# repo_url: https://github.com/Poly-OpenDev/MKDOCS-template
 
 # Configuration
 theme:
@@ -31,6 +31,9 @@ theme:
 # Plugins
 plugins:
   - search
+  - minify:
+      minify_html: true
+      minify_js: true
 
 # Extensions
 markdown_extensions:
@@ -75,3 +78,5 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
+  - Getting Started:
+    - Overview: "getting_started/index.md"
