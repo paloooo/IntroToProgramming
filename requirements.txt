@@ -3,5 +3,5 @@ Pygments>=2.4
 markdown>=3.2
 pymdown-extensions>=7.0
 mkdocs-material-extensions>=1.0
-mkdocs-material
+mkdocs-material>=8.2.14
 mkdocs-minify-plugin

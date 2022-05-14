@@ -1,41 +1,92 @@
-site_name: Template
+# ----- Project Information -----
+
+site_name: INTRODUCCION A LA PROGRAMACIÓN
+site_url: 
+site_author: Adriel E. González Martínez
+site_description: >-
+  Create a branded static site from a set of Markdown files to host the
+  documentation of your Open Source or commercial project
+
+# --- Copyright ---
+copyright: Copyright &copy; 2022 <a href="http://forwardlearning.com">Forward Learning</a>, Diseñado y mantenido por Adriel E. González
+
+# --- Version control & repository ---
+repo_name: paloooo/IntroToProgrammingDocs
+repo_url: https://github.com/paloooo/IntroToProgramming
+
+# ----- Project Information ends ----- 
+
+# ----- Theme configuration -----
+
 theme:
- name: material
- palette:
+  name: material
+  custom_dir: !ENV [THEME_DIR, "material"]
+
+
+# ---- Static files
+  static_templates:
+    - 404.html
+
+# Note:  Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: false
+
+# Note: Default values, taken from mkdocs_theme.yml
+  language: es #Site locale & language set to español
+  
+
+# :::::::::: Theme features ::::::::::
+  features:
+
+# :::::  Site navigation features  ::::: 
+    - navigation.search
+    - navigation.indexes
+  # - navigation.instant
+    - navigation.tabs # Tabs menus under the header 
+  # - navigation.tabs.sticky # Sticky tabs shows when scrolling - DISABLE
+    - navigation.sections # Left sidebar menu 
+  # - navigation.expand # Left sidebar menu expands by default - DISABLE
+    - navigation.tracking
+    - navigation.top # Back to top buttom 
+
+# ::::: Site Search & index features :::::     
+    - search.highlight
+    - search.share
+    - search.suggest
+
+# ::::: Table of contents (toc) features  :::::  
+    - toc.follow
+    # - toc.integrate - DISABLE
+
+# ::::: Site header features ::::: 
+  # - header.autohide # Autohide the header when scrolling - DISABLE
+
+# ::::: Content display features ::::: 
+    - content.code.annotate
+  # - content.tabs.link - DISABLE
+    - content.tooltips
+
+# :::::::::: Theme features ends ::::::::::
+   
+palette:
   scheme: default
   primary: deep purple
   accent: deep purple
-  features:
-   - instant
-   - tabs
-   - search
-
-# repo_url: https://github.com/Poly-OpenDev/MKDOCS-template
-
-# Configuration
-theme:
-  name: material
-  # Default values, taken from mkdocs_theme.yml
-  language: en
-  features:
-    - tabs
-    #- instant
-  palette:
-    scheme: default
-    primary: deep purple
-    accent: deep purple
-  font:
+# --- Site fonts --- 
+font:
     text: Roboto
     code: Roboto Mono
 
-# Plugins
+# --- Theme Plugins ---
 plugins:
   - search
   - minify:
       minify_html: true
       minify_js: true
 
-# Extensions
+# ----- Theme configuration ends -----
+
+# ----- Markdown Extensions -----
 markdown_extensions:
   - markdown.extensions.admonition
   - markdown.extensions.attr_list
@@ -75,8 +126,17 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-# Page tree
+# ----- Site Tree & Navigation  -----
 nav:
-  - Home: index.md
+  - Inicio: index.md
   - Getting Started:
     - Overview: "getting_started/index.md"
+  - Referencia Rápida:
+    - Python: "quick_reference/python-quick-reference_es.md"
+    - Python Turtle: "quick_reference/turtle-quick-reference_es.md"
+    - Python PyGame: "quick_reference/pygame-quick-reference_es.md"
+    - Python Pyxel: "quick_reference/pyxel-quick-reference_es.md"
+    - Markdown: "quick_reference/markdown-quick-reference_es.md"
+  
+# ----- Site Tree & Navigation ends ----- 
+   
