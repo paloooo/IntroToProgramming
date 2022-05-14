@@ -288,7 +288,7 @@ multiplicacion = num1 * num2
 multiplicacion = 3 * 4
 ```
 ### División 
-**Expresión:** ($^3/_4$)
+**Expresión:** (3/4)
 
 **Sintaxis:** 
 ```python
@@ -298,7 +298,7 @@ division = num1 / num2
 division = 3 / 4
 ```
 ### Exponentes
-**Expresión:** ($3^4$)
+**Expresión:** 3<sup> 4</sup>
 
 **Sintaxis:** 
 ```python

@@ -1,4 +1,4 @@
-# ----- Project Information -----
+#------------ Project Information ------------
 
 site_name: INTRODUCCION A LA PROGRAMACIÓN
 site_url: 
@@ -7,23 +7,23 @@ site_description: >-
   Create a branded static site from a set of Markdown files to host the
   documentation of your Open Source or commercial project
 
-# --- Copyright ---
+### Copyright ### 
 copyright: Copyright &copy; 2022 <a href="http://forwardlearning.com">Forward Learning</a>, Diseñado y mantenido por Adriel E. González
 
-# --- Version control & repository ---
+### Version control & repository  ###
 repo_name: paloooo/IntroToProgrammingDocs
 repo_url: https://github.com/paloooo/IntroToProgramming
 
-# ----- Project Information ends ----- 
+#------------ ends ------------  
 
-# ----- Theme configuration -----
+#---------- Theme configuration ----------
 
 theme:
   name: material
   custom_dir: !ENV [THEME_DIR, "material"]
 
 
-# ---- Static files
+### Static files ###
   static_templates:
     - 404.html
 
@@ -35,10 +35,10 @@ theme:
   language: es #Site locale & language set to español
   
 
-# :::::::::: Theme features ::::::::::
+#----- Theme features -----
   features:
 
-# :::::  Site navigation features  ::::: 
+#:::  Site navigation features  ::: 
     - navigation.search
     - navigation.indexes
   # - navigation.instant
@@ -49,24 +49,24 @@ theme:
     - navigation.tracking
     - navigation.top # Back to top buttom 
 
-# ::::: Site Search & index features :::::     
+#::: Site Search & index features :::     
     - search.highlight
     - search.share
     - search.suggest
 
-# ::::: Table of contents (toc) features  :::::  
+#::: Table of contents (toc) features :::  
     - toc.follow
     # - toc.integrate - DISABLE
 
-# ::::: Site header features ::::: 
+#::: Site header features ::: 
   # - header.autohide # Autohide the header when scrolling - DISABLE
 
-# ::::: Content display features ::::: 
+#::: Content display features ::: 
     - content.code.annotate
   # - content.tabs.link - DISABLE
     - content.tooltips
 
-# :::::::::: Theme features ends ::::::::::
+#----- ends -----
    
 palette:
   scheme: default
@@ -86,14 +86,14 @@ plugins:
 
 # ----- Theme configuration ends -----
 
-# ----- Markdown Extensions -----
+# ---------- Markdown Extensions ----------
 markdown_extensions:
-  - markdown.extensions.admonition
-  - markdown.extensions.attr_list
-  - markdown.extensions.def_list
-  - markdown.extensions.footnotes
-  - markdown.extensions.meta
-  - markdown.extensions.toc:
+  - meta
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - toc:
       permalink: true
   - pymdownx.arithmatex:
       generic: true
@@ -126,7 +126,9 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-# ----- Site Tree & Navigation  -----
+# ---------- ends ----------
+
+# ---------- Site Tree & Navigation  ----------
 nav:
   - Inicio: index.md
   - Getting Started:
@@ -138,5 +140,5 @@ nav:
     - Python Pyxel: "quick_reference/pyxel-quick-reference_es.md"
     - Markdown: "quick_reference/markdown-quick-reference_es.md"
   
-# ----- Site Tree & Navigation ends ----- 
+# ---------- ends ---------- 
    
